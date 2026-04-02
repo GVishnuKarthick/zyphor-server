@@ -40,7 +40,9 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowFrontend", policy =>
     {
         policy
-            .WithOrigins("https://zyphor-client.vercel.app/")
+            .WithOrigins(
+            "http://localhost:5173",
+            "https://zyphor-client.vercel.app/")
             .AllowAnyHeader()
             .AllowAnyMethod()
             .AllowCredentials();
