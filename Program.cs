@@ -41,7 +41,7 @@ builder.Services.AddCors(options =>
     {
         policy
             .WithOrigins(
-            "https://zyphor-client.vercel.app/")
+            "https://zyphor-client.vercel.app")
             .AllowAnyHeader()
             .AllowAnyMethod()
             .AllowCredentials();
